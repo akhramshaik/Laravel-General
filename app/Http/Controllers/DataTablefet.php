@@ -27,6 +27,11 @@ return Datatables::of($users)->addColumn('action', function ($user) {
 	}
 
 
+	public function just_buttons(){
+	  $data = DataTable::paginate(10);
+	  return view('pagination',compact('data'));
+	}
+
 
 	
 }

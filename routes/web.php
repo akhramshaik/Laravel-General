@@ -16,9 +16,8 @@ Route::get('/datatable', function () {
 });
 
 
-// Route::get('/pagination', function () {
-//     return view('pagination');
-// });
+Route::get('just_buttons','DataTablefet@just_buttons');
+
 
 
 Route::get('get_data','DataTablefet@get_data');
