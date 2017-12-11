@@ -16,9 +16,9 @@ Route::get('/datatable', function () {
 });
 
 
-// Route::get('/pagination', function () {
-//     return view('pagination');
-// });
+Route::get('/bordered_tables', function () {
+    return view('bordered');
+});
 
 
 Route::get('get_data','DataTablefet@get_data');
