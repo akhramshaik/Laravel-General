@@ -16,6 +16,11 @@ Route::get('/datatable', function () {
 });
 
 
+Route::get('/bordered_tables', function () {
+    return view('bordered');
+});
+
+
 
 Route::get('get_data','DataTablefet@get_data');
 
