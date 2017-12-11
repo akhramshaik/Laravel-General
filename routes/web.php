@@ -16,10 +16,14 @@ Route::get('/datatable', function () {
 });
 
 
+
 Route::get('just_buttons','DataTablefet@just_buttons');
 
-
+Route::get('/bordered_tables', function () {
+    return view('bordered');
+});
 
 Route::get('get_data','DataTablefet@get_data');
-Route::get('get_data_pag','DataTablefet@get_data_pag');
+
+Route::get('get_data_pagination','DataTablefet@get_data_pagination');
 
