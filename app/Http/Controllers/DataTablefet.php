@@ -21,7 +21,7 @@ return Datatables::of($users)->addColumn('action', function ($user) {
 	}
 
 
-	public function get_data_pag(){
+	public function get_data_pagination(){
 	  $data = DataTable::paginate(10);
 	  return view('pagination',compact('data'));
 	}
